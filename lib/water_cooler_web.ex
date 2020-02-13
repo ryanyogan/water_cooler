@@ -23,6 +23,7 @@ defmodule WaterCoolerWeb do
 
       import Plug.Conn
       import WaterCoolerWeb.Gettext
+      import Phoenix.LiveView.Controller
       alias WaterCoolerWeb.Router.Helpers, as: Routes
     end
   end
@@ -41,6 +42,7 @@ defmodule WaterCoolerWeb do
 
       import WaterCoolerWeb.ErrorHelpers
       import WaterCoolerWeb.Gettext
+      import Phoenix.LiveView.Helpers
       alias WaterCoolerWeb.Router.Helpers, as: Routes
     end
   end
@@ -50,6 +52,7 @@ defmodule WaterCoolerWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+      import Phoenix.LiveView.Router
     end
   end
 
